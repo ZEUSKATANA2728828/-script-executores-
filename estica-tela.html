@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Estica Tela</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/aviso.js"></script>
+</head>
+<body>
+
+<header>
+    <a href="index.html">Home</a>
+    <a href="executores.html">Executores</a>
+    <a href="scripts.html">Scripts</a>
+    <a href="readme.html">README</a>
+</header>
+
+<main>
+    <h1>Estica Tela (Mais FPS)</h1>
+
+    <textarea readonly id="script">
+getgenv().Resolution = { [".gg/scripters"] = 0.65 }
+local Camera = workspace.CurrentCamera
+if getgenv().gg_scripters == nil then
+game:GetService("RunService").RenderStepped:Connect(
+function()
+Camera.CFrame = Camera.CFrame * CFrame.new(0, 0, 0, 1, 0, 0, 0, getgenv().Resolution [".gg/scripters"], 0, 0, 0, 1)
+end
+)
+end
+getgenv().gg_scripters = "Aori0001"
+    </textarea>
+
+    <div class="copy-btn" onclick="navigator.clipboard.writeText(script.value); alert('Script copiado!')">
+        COPIAR SCRIPT
+    </div>
+</main>
+
+</body>
+</html>
