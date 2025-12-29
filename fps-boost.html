@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>FPS BOOST</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/aviso.js"></script>
+</head>
+<body>
+
+<header>
+    <a href="index.html">Home</a>
+    <a href="executores.html">Executores</a>
+    <a href="scripts.html">Scripts</a>
+    <a href="readme.html">README</a>
+</header>
+
+<main>
+    <h1>FPS BOOST</h1>
+
+    <textarea readonly id="script">
+-- Made by RIP#6666
+_G.Settings = {
+Players = {
+["Ignore Me"] = true,
+["Ignore Others"] = true
+},
+Meshes = {
+Destroy = false,
+LowDetail = true
+},
+Images = {
+Invisible = true,
+LowDetail = false,
+Destroy = false
+},
+["No Particles"] = true,
+["No Camera Effects"] = true,
+["No Explosions"] = true,
+["No Clothes"] = true,
+["Low Water Graphics"] = true,
+["No Shadows"] = true,
+["Low Rendering"] = true,
+["Low Quality Parts"] = true
+}
+loadstring(game:HttpGet("https://raw.githubusercontent.com/CasperFlyModz/discord.gg-rips/main/FPSBooster.lua"))()
+    </textarea>
+
+    <div class="copy-btn" onclick="navigator.clipboard.writeText(script.value); alert('Script copiado!')">
+        COPIAR SCRIPT
+    </div>
+</main>
+
+</body>
+</html>
